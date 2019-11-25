@@ -73,7 +73,7 @@ body.fade {
     }
 }
 
-#Typing_Video {
+#Typing_video {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -221,7 +221,7 @@ body.fade {
     float: left;
     width: 50%;
     padding: 1.6%;
-    height: 448px;
+    height: 520px;
     background-color: #f2f2f2;
 }
 
@@ -230,9 +230,10 @@ body.fade {
     width: 50%;
     padding: 1.6%;
     padding-top: 1.9%;
-    height: 448px;
+    height: 520px;
     background-color: #720404;
 }
+
 
 
 
