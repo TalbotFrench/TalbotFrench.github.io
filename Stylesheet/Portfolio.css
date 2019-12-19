@@ -15,7 +15,8 @@ body.fade {
 
 .Navbar{
     overflow: hidden;
-    background-color: black;
+    background-color: #720404;
+    border: 3px black;
     position: fixed;
     top: 0;
     width: 100%;
@@ -53,7 +54,7 @@ body.fade {
 
 .Navbar a:hover {
     background-color: #f4f4f4;
-    color: black;
+    color: #720404;
     font-weight: bold;
     cursor: pointer;
     -webkit-transition-duration: 1s; 
