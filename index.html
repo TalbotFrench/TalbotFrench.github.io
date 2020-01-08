@@ -1,3 +1,21 @@
+
+<?php
+
+if($_POST["submit"]) {
+    $recipient="talbot.french@gmail.com";
+    $subject="Form to email message";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -178,7 +196,7 @@
 
             <div class="Column_1"> <!-- Contact form, Right "Column" -->
                 <h1>Contact</h1>
-                    <form action="" method="get">
+                    <!-- <form action="" method="post" action="contact.php">
                         <label>Name:</label>
                             <input type="text" placeholder="Please enter your name here.">
                         <label>Email:</label>
@@ -186,6 +204,20 @@
                         <label>Message:</label>
                         <input type="text" id="Message" name="Message" placeholder="Please write your message.">
                         <input type="submit" value="Submit">
+                    </form> -->
+                    <?=$thankYou ?>
+
+                    <form method="post" action="contact.php">
+                        <label>Name:</label>
+                        <input name="sender">
+
+                        <label>Email address:</label>
+                        <input name="senderEmail">
+
+                        <label>Message:</label>
+                        <textarea rows="5" cols="20" name="message"></textarea>
+
+                        <input type="submit" name="submit">
                     </form>
                 </div>
             </div>
