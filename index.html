@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,12 +14,12 @@
     <body class="background">
         <script>
             document.body.className += ' fade-out';
-            $(function(){
+            $(function () {
                 $('body').removeClass('fade-out');
             }
             );
-            </script>
-<!--Navagation-->
+        </script>
+        <!--Navagation-->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
             <a href="#SlideShow">Slideshow</a>
@@ -27,25 +27,26 @@
             <a href="#Github">Github</a>
             <a href="#Contact">Contact</a>
         </div>
-<!-- Home -->
-            <br>
-            <br>
+        <!-- Home -->
+        <br>
+        <br>
 
-<!-- Video -->
+        <!-- Video -->
         <div id="Home">
             <video autoplay muted loop id="Typing_video">
                 <source src="Stylesheet/Video/Typing.mp4" type="video/mp4">
-                    Your browser does not support HTML5 video.
-                </video>
-            </div>
-                      
-<!-- Video Text -->
-     <div class="Video_Text">
-         <h1 style="color:white;">Talbot's Portfolio</h1>
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!-- Video Text -->
+        <div class="Video_Text">
+            <h1 style="color:white;">Talbot's Portfolio</h1>
             <p>
                 <strong>
                     <center>
-                        <q>Anything worth doing well is worth doing poorly at first.
+                        <q>
+                            Anything worth doing well is worth doing poorly at first.
                         </q>
                         <br>-Ray Congdon<br>
                         <br>
@@ -55,115 +56,118 @@
                 </strong>
             </p>
         </div>
-  
+
         <!-- SlideShow -->
         <div id="SlideShow">
             <div id="Sildeshow_Background">
                 <div id="Slideshow_Container">
 
-                        <div class="mySlides fade">
-                                <div class="Slide_Number">1 / 5</div>
-                                  <img class="Slide_Show_Images" src="Stylesheet/Images/Picture_of_You.JPG" style="width:100%">
-                                    <div class="text">I'm available to assist you on your project!</div>
-                              </div>
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">1 / 5</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/Picture_of_You.JPG" style="width:100%">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
 
                     <div class="mySlides fade">
-                            <div class="Slide_Number">2 / 5</div>
-                            <img class="Slide_Show_Images" src="Stylesheet/Images/HTML_CSS_and_JavaScript.jpeg" style="width:100%">
-                              <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
-                        </div>
-                
-                        
-                
-                        <div class="mySlides fade">
-                          <div class="Slide_Number">3 / 5</div>
-                            <img class="Slide_Show_Images" src="Stylesheet/Images/C_Sharp_and_Dot_NET.png" style="width:100%">
-                              <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
-                        </div>
-                
-                        <div class="mySlides fade">
-                          <div class="Slide_Number">4 / 5</div>
-                            <img class="Slide_Show_Images" src="Stylesheet/Images/SQL.jpg" style="width:100%">
-                              <div class="text">Back end development, databases and SQL.</div>
-                            </div>
-                
-                        <div class="mySlides fade">
-                          <div class="Slide_Number">5 / 5</div>
-                            <img class="Slide_Show_Images" src="Stylesheet/Images/Coding_1.jpg" style="width:100%">
-                              <div class="text"> 
-                                <a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
-                              </div>
-                        </div>
-                    
-                          <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-                          <a class="Next" onclick="plusSlides(1)">&#10095;</a>
-                        
-                      </div>
-                  <br>
-                
-                      <div style="text-align:center">
-                 
-                        <span class="dot" onclick="currentSlide(1)"></span> 
-                        <span class="dot" onclick="currentSlide(2)"></span> 
-                        <span class="dot" onclick="currentSlide(3)"></span> 
-                        <span class="dot" onclick="currentSlide(4)"></span> 
-                        <span class="dot" onclick="currentSlide(5)"></span>  
-                
-                      </div>
+                        <div class="Slide_Number">2 / 5</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/HTML_CSS_and_JavaScript.jpeg" style="width:100%">
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
                     </div>
-                  </div>
-                
-                <!--  -->
-                  <script>
-                    var slideIndex = 1;
-                      showSlides(slideIndex);
-                    function plusSlides(n) {
-                      showSlides(slideIndex += n);
-                    }
-                    function currentSlide(n) {
-                      showSlides(slideIndex = n);
-                    }
-                    function showSlides(n) {
-                      var i;
-                      var slides = document.getElementsByClassName("mySlides");
-                      var dots = document.getElementsByClassName("dot");
-                        if (n > slides.length) {slideIndex = 1}    
-                        if (n < 1) {slideIndex = slides.length}
-                          for (i = 0; i < slides.length; i++) {
-                          slides[i].style.display = "none";  
-                          }
-                          for (i = 0; i < dots.length; i++) {
-                            dots[i].className = dots[i].className.replace(" active", "");
-                          }
-                      slides[slideIndex-1].style.display = "block";  
-                      dots[slideIndex-1].className += " active";
-                    }
-                  </script>
-                    
+
+
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">3 / 5</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/C_Sharp_and_Dot_NET.png" style="width:100%">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
                     </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">4 / 5</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/SQL.jpg" style="width:100%">
+                        <div class="text">Back end development, databases and SQL.</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">5 / 5</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/Coding_1.jpg" style="width:100%">
+                        <div class="text">
+                            <a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
+                        </div>
+                    </div>
+
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+
                 </div>
             </div>
         </div>
 
-<!-- About Section -->
+        <!--  -->
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- About Section -->
         <div class="Row" id="About">
-            <div class="Column_2"> <!--left column-->
+            <div class="Column_2">
+                <!--left column-->
                 <img src="Stylesheet/Images/Development.jpg" alt="Laptop">
             </div>
 
-        <div class="Column_1">
-            <h1>About</h1>
+            <div class="Column_1">
+                <h1>About</h1>
                 <p>I am a software developer who enjoys coding! I am from Fort Worth, Texas. I currently live in Provo, Utah. <br><br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s C# And .NET Framework Boot Camp, and am trained in the following web and programing languages: HTML, CSS, Javascript, SQL, C# and more. <br><br>I am a full-stack developer and would love to work with you. <a href="#Contact">Contact</a> me below!</p><br><a href="https://www.linkedin.com/in/talbot-french-509440193/">Linkedin</a><br>
                 <a href="Talbot French Resume (1).pdf">Resume</a>
             </div>
         </div>
 
-<!-- GitHub section-->
+        <!-- GitHub section-->
         <div class="Row" id="Github">
             <div class="Column_1">
                 <h1>Github</h1>
-                    <p>You can view my coding projects on my GitHub profile here:<br>
-                        <center><a href="https://github.com/TalbotFrench" target="_blank">Talbot French's GitHub</a></center></p>
+                <p>
+                    You can view my coding projects on my GitHub profile here:<br>
+                    <center><a href="https://github.com/TalbotFrench" target="_blank">Talbot French's GitHub</a></center>
+                </p>
             </div>
 
             <div class="Column_2">
@@ -171,45 +175,133 @@
             </div>
         </div>
 
-<!-- Contact section -->
+        <!-- Contact section -->
         <div class="Row" id="Contact">
             <div class="Column_2">
                 <img src="Stylesheet/Images/Contact1.jpg" alt="Contact_Image">
             </div>
-            <div class="Column_1"> <!-- Contact form, Right "Column" -->
+            <div class="Column_1">
+                <!-- Contact form, Right "Column" -->
                 <h1>Contact</h1>
-                     <form action="" method="post" >
-                        <label>Name:</label>
-                            <input type="text" placeholder="Please enter your name here.">
-                        <label>Email:</label>
-                            <input type="text" id="Email" name="Email" placeholder="Please write your email.">
-                        <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message.">
-                        <input type="submit" value="Submit">
-                    </form> 
-                    <!-- <?=$thankYou ?> -->
+                <form action="" method="post">
+                    <label>Name:</label>
+                    <input type="text" placeholder="Please enter your name here.">
+                    <label>Email:</label>
+                    <input type="text" id="Email" name="Email" placeholder="Please write your email.">
+                    <label>Message:</label>
+                    <input type="text" id="Message" name="Message" placeholder="Please write your message.">
+                    <input type="submit" value="Submit">
+                </form>
+                <!-- <?=$thankYou ?> -->
+                <!-- <form method="post" action="contact.php">
+                <label>Name:</label>
+                <input name="sender">
 
-                    <!-- <form method="post" action="contact.php">
-                        <label>Name:</label>
-                        <input name="sender">
+                <label>Email address:</label>
+                <input name="senderEmail">
 
-                        <label>Email address:</label>
-                        <input name="senderEmail">
+                <label>Message:</label>
+                <input type="text" name="Message"></textarea>
 
-                        <label>Message:</label>
-                        <input type="text" name="Message"></textarea>
+                <input type="submit" name="submit">
+            </form> -->
+            </div>
+        </div>
+        <!-- SlideShow Digital Art -->
+        <div id="SlideShow">
+            <div id="Sildeshow_Background">
+                <div id="Slideshow_Container">
 
-                        <input type="submit" name="submit">
-                    </form> -->
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">1 / 5</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/spaceman.jpg" style="width:100%">
+                        <div class="text">Experienced in Photoshop...</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">2 / 5</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/Toad sage2(1).jpg" style="width:100%">
+                        <div class="text">Illustrator...</div>
+                    </div>
+
+
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">3 / 5</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/Symbol1.png" style="width:100%">
+                        <div class="text">Gimp...</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">4 / 5</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/cousins jpg.jpg" style="width:100%">
+                        <div class="text">And Microsoft Paint.</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">5 / 5</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/Coding_1.jpg" style="width:100%">
+                        <div class="text">
+                            <a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
+                        </div>
+                    </div>
+
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+
                 </div>
             </div>
-         <!--Footer-->
+        </div>
+
+        <!--  -->
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+        </div>
+        </div>
+        </div>
+        </div>
+        <!--Footer-->
         <footer>
-                <p>
-                    <center>&copy Zenophelius Inc., <a href="https://learncodinganywhere.com/"></a></center><br>
-                </p>
+            <p>
+                <center>Zenophelius., <a href="https://learncodinganywhere.com/"></a></center><br>
+            </p>
         </footer>
-             
-            </body>
+
+    </body>
 
 </html>
