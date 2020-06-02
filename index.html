@@ -26,6 +26,7 @@
             <a href="#About">About</a>
             <a href="#Github">Github</a>
             <a href="#Contact">Contact</a>
+            <a href="#Art">Art</a>
         </div>
         <!-- Home -->
         <br>
@@ -208,7 +209,7 @@
             </div>
         </div>
         <!-- SlideShow Digital Art -->
-        <div id="SlideShow">
+        <div id="Art">
             <div id="Sildeshow_Background">
                 <div id="Slideshow_Container">
 
@@ -240,7 +241,7 @@
 
                     <div class="mySlides1 fade">
                         <div class="Slide_Number">10 / 10</div>
-                        <img class="Slide_Show_Images" src="Stylesheet/Images/Coding_1.jpg" style="width:100%">
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/Disclaimer.png" style="width:100%">
                         <div class="text">
                             <a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
                         </div>
@@ -254,11 +255,11 @@
 
                 <div style="text-align:center">
 
-                    <span class="dot" onclick="currentSlide(6)"></span>
-                    <span class="dot" onclick="currentSlide(7)"></span>
-                    <span class="dot" onclick="currentSlide(8)"></span>
-                    <span class="dot" onclick="currentSlide(9)"></span>
-                    <span class="dot" onclick="currentSlide(10)"></span>
+                    <span class="dot1" onclick="currentSlide1(6)"></span>
+                    <span class="dot1" onclick="currentSlide1(7)"></span>
+                    <span class="dot1" onclick="currentSlide1(8)"></span>
+                    <span class="dot1" onclick="currentSlide1(9)"></span>
+                    <span class="dot1" onclick="currentSlide1(10)"></span>
 
                 </div>
             </div>
@@ -267,27 +268,27 @@
         <!--  -->
         <script>
             var slideIndex1 = 6;
-            showSlides(slideIndex);
+            showSlides(slideIndex1);
             function plusSlides(n) {
-                showSlides(slideIndex += n);
+                showSlides(slideIndex1 += n);
             }
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
+            function currentSlide1(n) {
+                showSlides(slideIndex1 = n);
             }
             function showSlides(n) {
                 var i;
-                var slides = document.getElementsByClassName("mySlides1");
-                var dots = document.getElementsByClassName("dot");
-                if (n > slides.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = slides.length }
+                var slides1 = document.getElementsByClassName("mySlides1");
+                var dots1 = document.getElementsByClassName("dot1");
+                if (n > slides.length) { slideIndex1 = 1 }
+                if (n < 1) { slideIndex1 = slides.length }
                 for (i = 0; i < slides.length; i++) {
                     slides[i].style.display = "none";
                 }
                 for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
+                    dots1[i].className = dots1[i].className.replace(" active", "");
                 }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
+                slides[slideIndex1 - 1].style.display = "block";
+                dots1[slideIndex1 - 1].className += " active";
             }
         </script>
 
