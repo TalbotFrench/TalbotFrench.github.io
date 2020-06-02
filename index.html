@@ -26,6 +26,7 @@
             <a href="#About">About</a>
             <a href="#Github">Github</a>
             <a href="#Contact">Contact</a>
+            <a href="#Art">Art</a>
         </div>
         <!-- Home -->
         <br>
@@ -95,6 +96,39 @@
                             <a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
                         </div>
                     </div>
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">6 / 10</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/spaceman.jpg" style="width:100%">
+                        <div class="text">Experienced in Photoshop...</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">7 / 10</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/Toad sage2 (1).jpg" style="width:100%">
+                        <div class="text">Illustrator...</div>
+                    </div>
+
+
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">8 / 10</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/Symbol1.png" style="width:100%">
+                        <div class="text">Gimp...</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">9 / 10</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/cousins jpg.jpg" style="width:100%">
+                        <div class="text">And Microsoft Paint.</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">10 / 10</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/Disclaimer.png" style="width:100%">
+                        <div class="text">
+                            <a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
+                        </div>
+                    </div>
 
                     <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="Next" onclick="plusSlides(1)">&#10095;</a>
@@ -109,6 +143,11 @@
                     <span class="dot" onclick="currentSlide(3)"></span>
                     <span class="dot" onclick="currentSlide(4)"></span>
                     <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                    <span class="dot" onclick="currentSlide(9)"></span>
+                    <span class="dot" onclick="currentSlide(10)"></span>
 
                 </div>
             </div>
@@ -192,23 +231,11 @@
                     <input type="text" id="Message" name="Message" placeholder="Please write your message.">
                     <input type="submit" value="Submit">
                 </form>
-                <!-- <?=$thankYou ?> -->
-                <!-- <form method="post" action="contact.php">
-                <label>Name:</label>
-                <input name="sender">
-
-                <label>Email address:</label>
-                <input name="senderEmail">
-
-                <label>Message:</label>
-                <input type="text" name="Message"></textarea>
-
-                <input type="submit" name="submit">
-            </form> -->
+               
             </div>
         </div>
         <!-- SlideShow Digital Art -->
-        <div id="SlideShow">
+        <!-- <div id="Art">
             <div id="Sildeshow_Background">
                 <div id="Slideshow_Container">
 
@@ -240,7 +267,7 @@
 
                     <div class="mySlides1 fade">
                         <div class="Slide_Number">10 / 10</div>
-                        <img class="Slide_Show_Images" src="Stylesheet/Images/Coding_1.jpg" style="width:100%">
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/Disclaimer.png" style="width:100%">
                         <div class="text">
                             <a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
                         </div>
@@ -254,42 +281,42 @@
 
                 <div style="text-align:center">
 
-                    <span class="dot" onclick="currentSlide(6)"></span>
-                    <span class="dot" onclick="currentSlide(7)"></span>
-                    <span class="dot" onclick="currentSlide(8)"></span>
-                    <span class="dot" onclick="currentSlide(9)"></span>
-                    <span class="dot" onclick="currentSlide(10)"></span>
+                    <span class="dot1" onclick="currentSlide1(6)"></span>
+                    <span class="dot1" onclick="currentSlide1(7)"></span>
+                    <span class="dot1" onclick="currentSlide1(8)"></span>
+                    <span class="dot1" onclick="currentSlide1(9)"></span>
+                    <span class="dot1" onclick="currentSlide1(10)"></span>
 
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!--  -->
-        <script>
-            var slideIndex1 = 6;
-            showSlides(slideIndex);
+        <!-- <script>
+            var slideIndex1 = 1;
+            showSlides(slideIndex1);
             function plusSlides(n) {
-                showSlides(slideIndex += n);
+                showSlides(slideIndex1 += n);
             }
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
+            function currentSlide1(n) {
+                showSlides(slideIndex1 = n);
             }
             function showSlides(n) {
                 var i;
-                var slides = document.getElementsByClassName("mySlides1");
-                var dots = document.getElementsByClassName("dot");
-                if (n > slides.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = slides.length }
+                var slides1 = document.getElementsByClassName("mySlides1");
+                var dots1 = document.getElementsByClassName("dot1");
+                if (n > slides.length) { slideIndex1 = 1 }
+                if (n < 1) { slideIndex1 = slides.length }
                 for (i = 0; i < slides.length; i++) {
                     slides[i].style.display = "none";
                 }
                 for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
+                    dots1[i].className = dots1[i].className.replace(" active", "");
                 }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
+                slides[slideIndex1 - 1].style.display = "block";
+                dots1[slideIndex1 - 1].className += " active";
             }
-        </script>
+        </script> -->
 
         </div>
         </div>
